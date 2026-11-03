@@ -28,3 +28,6 @@ discutidos em atividades de sustentação. Antes de executar qualquer script:
 Scripts de consulta são identificados como somente leitura. Comandos de alteração,
 manutenção ou concessão de privilégios devem ser executados somente após validação.
 
+## Autor
+
+Diego Rafael da Silveira
