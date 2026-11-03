@@ -1,0 +1,18 @@
+/*
+SGBD: Oracle Database
+CATEGORIA: Administração / Quotas
+OBJETIVO: Consultar quotas de usuários por tablespace.
+IMPACTO: Somente leitura.
+PRÉ-REQUISITOS: Acesso à view DBA_TS_QUOTAS.
+*/
+
+SELECT
+    USERNAME,
+    TABLESPACE_NAME,
+    BYTES / 1024 / 1024 AS UTILIZADO_MB,
+    CASE
+        WHEN MAX_BYTES = -1 THEN 'UNLIMITED'
+        ELSE TO_CHAR(MAX_BYTES / 1024 / 1024)
+    END AS LIMITE_MB
+FROM DBA_TS_QUOTAS
+ORDER BY USERNAME, TABLESPACE_NAME;

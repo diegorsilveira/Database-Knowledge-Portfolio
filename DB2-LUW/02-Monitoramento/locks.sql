@@ -1,0 +1,15 @@
+/*
+SGBD: IBM Db2 LUW
+CATEGORIA: Monitoramento / Locks
+OBJETIVO: Consultar locks monitorados na instância.
+IMPACTO: Somente leitura.
+*/
+
+SELECT
+    APPLICATION_HANDLE,
+    LOCK_OBJECT_TYPE,
+    LOCK_MODE,
+    LOCK_STATUS,
+    LOCK_NAME
+FROM TABLE(MON_GET_LOCKS(NULL, -2)) AS L
+ORDER BY APPLICATION_HANDLE;
