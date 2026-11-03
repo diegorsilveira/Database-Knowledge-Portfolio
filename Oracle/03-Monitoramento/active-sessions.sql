@@ -1,0 +1,3 @@
+/* Oracle | Monitoramento | Sessões de usuário e informações de conexão. */
+SELECT INST_ID,SID,SERIAL#,USERNAME,STATUS,MACHINE,PROGRAM,LOGON_TIME,SQL_ID
+FROM GV$SESSION WHERE TYPE='USER' ORDER BY LOGON_TIME DESC;

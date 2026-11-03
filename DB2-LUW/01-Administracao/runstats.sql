@@ -1,12 +1,10 @@
 /*
 SGBD: IBM Db2 LUW
 CATEGORIA: Administração / Estatísticas
-OBJETIVO: Atualizar estatísticas de distribuição e índices de uma tabela.
+OBJETIVO: Atualizar estatísticas de uma tabela informada pelo administrador.
 IMPACTO: Atualiza estatísticas utilizadas pelo otimizador.
-ATENÇÃO: Avalie janela e política de manutenção do ambiente.
+ATENÇÃO: Substitua os identificadores genéricos e avalie janela/política de manutenção.
 */
-
 CALL SYSPROC.ADMIN_CMD(
-    'RUNSTATS ON TABLE CTA.MQT_ESCOPOUSUARIO
-     WITH DISTRIBUTION AND DETAILED INDEXES ALL'
+    'RUNSTATS ON TABLE <SCHEMA>.<NOME_TABELA> WITH DISTRIBUTION AND DETAILED INDEXES ALL'
 );

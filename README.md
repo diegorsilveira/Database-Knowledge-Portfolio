@@ -5,9 +5,9 @@ segurança, performance e troubleshooting de bancos de dados.
 
 ## SGBDs contemplados
 
-- [Microsoft SQL Server](./SQL-Server/README.md)
-- [IBM Db2 LUW](./DB2-LUW/README.md)
-- [Oracle Database](./Oracle/README.md)
+- [Microsoft SQL Server](./SQL-Server/README.md) — administração, segurança, I/O e troubleshooting
+- [IBM Db2 LUW](./DB2-LUW/README.md) — MQT, roles, locks e transações
+- [Oracle Database](./Oracle/README.md) — tablespaces, privilégios, sessões e objetos inválidos
 
 ## Organização
 
@@ -28,6 +28,3 @@ discutidos em atividades de sustentação. Antes de executar qualquer script:
 Scripts de consulta são identificados como somente leitura. Comandos de alteração,
 manutenção ou concessão de privilégios devem ser executados somente após validação.
 
-## Autor
-
-Diego Rafael da Silveira

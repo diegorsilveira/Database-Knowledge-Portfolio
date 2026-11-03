@@ -1,0 +1,3 @@
+/* Oracle | Segurança | Roles concedidas a usuários e outras roles. */
+SELECT GRANTEE,GRANTED_ROLE,ADMIN_OPTION,DEFAULT_ROLE
+FROM DBA_ROLE_PRIVS ORDER BY GRANTEE,GRANTED_ROLE;

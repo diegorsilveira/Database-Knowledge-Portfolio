@@ -1,0 +1,2 @@
+/* Oracle | Segurança | Privilégios de sistema concedidos. */
+SELECT GRANTEE,PRIVILEGE,ADMIN_OPTION FROM DBA_SYS_PRIVS ORDER BY GRANTEE,PRIVILEGE;

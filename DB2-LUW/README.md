@@ -12,3 +12,10 @@ Scripts para administração, monitoramento, manutenção e troubleshooting do D
 | `04-Troubleshooting` | Comandos db2pd |
 
 Verifique versão, autoridade e estado dos objetos antes de executar comandos administrativos.
+
+## Novos conteúdos deste lote
+
+- Membros de roles e privilégios de sistema.
+- Geração de comandos de manutenção para MQTs.
+- Monitoramento de lock waits e consulta de transações indoubt.
+- Modelo comentado para encerramento de aplicação por handle.

@@ -1,0 +1,3 @@
+/* Db2 LUW | Segurança | Membros das roles cadastradas. Somente leitura. */
+SELECT ROLENAME,GRANTEE,GRANTEETYPE,ADMIN
+FROM SYSCAT.ROLEAUTH ORDER BY ROLENAME,GRANTEE;
